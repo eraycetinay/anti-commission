@@ -1,6 +1,6 @@
 {
   "name": "anti-commission",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple function to prevent losses within commission rates.",
   "main": "index.js",
   "authors": [
