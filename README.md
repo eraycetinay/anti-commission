@@ -1,5 +1,9 @@
 # anti-commission
 
+Installation
+```
+npm install anti-commission
+```
 When trading for a $100 product, let's assume the bank gets 10%. That means your net profit is $90 dollars. 
 
 Even if we do a $110 transaction to prevent damage, you'll still have $1 loss because the new 10% will be $11, not $10. So the net profit would be $99, not $100. It goes this way forever. 
