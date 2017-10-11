@@ -10,6 +10,7 @@ Even if we do a $110 transaction to prevent damage, you'll still have $1 loss be
 
 At this point you can use this function to find the number you need to use to avoid commission damage.
 ```
+var antiCommission = require('anti-commission');
 antiCommission(price, rate, convergence);
 ```
 
