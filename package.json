@@ -1,9 +1,9 @@
 {
   "name": "anti-commission",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Eray Cetinay <eraycetinay@gmail.com>",
   "main": "index.js",
-  "description": "A simple function to prevent losses within commission rates.",
+  "description": "A mathematical function to calculate the price including commission.",
   "dependencies": {},
   "repository": {
     "type": "git",
