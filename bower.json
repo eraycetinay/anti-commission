@@ -1,7 +1,7 @@
 {
   "name": "anti-commission",
-  "version": "1.0.2",
-  "description": "A simple function to prevent losses within commission rates.",
+  "version": "1.0.3",
+  "description": "A mathematical function to calculate the price including commission.",
   "main": "index.js",
   "authors": [
     "Eray Cetinay <eraycetinay@gmail.com>"
