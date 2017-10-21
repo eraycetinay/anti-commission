@@ -1,27 +1,32 @@
-# anti-commission
+# Anti Commission
+[![npm version](https://badge.fury.io/js/anti-commission.svg)](https://badge.fury.io/js/anti-commission) 
+[![Bower](https://img.shields.io/bower/v/anti-commission.svg)]()
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
-Installation
+A mathematical function to calculate the price including commission.
+
+## Installation
 ```
 npm install anti-commission or bower install anti-commission
 ```
-
-anti-commission, calculates the number that should be used to prevent loss of commission in the payment process.
-
+# Usage
 ```
 var antiCommission = require('anti-commission');
 var value = antiCommission(price, rate, convergence);
 ```
-
-
-Eg;
-When trading for a $100 product, let's assume the bank gets 10%. That means your net profit is $90 dollars. Even if we do a $110 transaction to prevent damage, you'll still have $1 loss because the new 10% will be $11, not $10. So the net profit would be $99, not $100. It goes this way forever. At this point you can use this function to find the number you need to use to avoid commission damage.
-
-Lets assume we have $100 product and %10 commission rate.
+# Why should i use this function?
+Payment gateways receive commission over the last amount. If there is a 10% commission rate; Gateway receives a $10 commission for the item you want to sell for $100...
+If you sell the product for $110 to prevent damage, this time you pay $11 commission. You will still lose $1...
+But if you take the number that anti-commission gives you, your net profit will be $100.
+## Example
+Lets assume we have $100 product and %10 commission rate...
 If we set convergence number to 0.0005, we will earn $100 + ($0-$0.0005)
 ```
 antiCommission(100, 0.1, 0.0005); //will give "111.1115"
 //if we use "$111.1115" our net profit will be;
 //111.1115 - 111.1115 * 0.1 = 100.00035 ($100 + $0.00035)
 ```
+## License
+[MIT](LICENSE) license.
 
 
