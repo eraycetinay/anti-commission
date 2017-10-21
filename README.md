@@ -9,12 +9,12 @@ A mathematical function to calculate the price including commission.
 ```
 npm install anti-commission or bower install anti-commission
 ```
-# Usage
+## Usage
 ```
 var antiCommission = require('anti-commission');
 var value = antiCommission(price, rate, convergence);
 ```
-# Why should i use this function?
+### Why should i use this function?
 Payment gateways receive commission over the last amount. If there is a 10% commission rate; Gateway receives a $10 commission for the item you want to sell for $100...
 If you sell the product for $110 to prevent damage, this time you pay $11 commission. You will still lose $1...
 But if you take the number that anti-commission gives you, your net profit will be $100.
